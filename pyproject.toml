@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "auth_types"
+version = "0.1.0"
+description = ""
+authors = []
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.77.1"
+uvicorn = "^0.17.6"
+detail = "^0.2.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+isort = "^5.10.1"
+pre-commit = "^2.19.0"
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 60
+include_trailing_comma = true
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
