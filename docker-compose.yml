@@ -2,13 +2,13 @@ version: "3.9"
 services:
   basic:
     build:
-      context: ./
+      context: auth_types
       dockerfile: auth_types/basic/Dockerfile
     ports:
       - "8000:8000"
   bearer_token:
     build:
-      context: ./
+      context: auth_types
       dockerfile: auth_types/bearer_token/Dockerfile
     ports:
       - "8001:8000"
